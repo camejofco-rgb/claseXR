@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0d10" />
+  <meta name="description" content="HoloLink — comunicador holográfico portátil de diseño especulativo para 2042." />
+  <title>HoloLink — 2042</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir al contenido</a>
+
+  <header class="site-header" aria-label="Navegación principal">
+    <a class="brand" href="#top" aria-label="HoloLink, inicio">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>HOLOLINK</span>
+    </a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#objeto">Objeto</a>
+      <a href="#sistema">Sistema</a>
+      <a href="#historia">Historia</a>
+      <a href="#ar">AR</a>
+    </nav>
+    <span class="year-chip">2042</span>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Comunicación espacial · 2042</p>
+        <h1>HOLO<span>LINK</span></h1>
+        <p class="hero-lede">La presencia deja de caber en una pantalla.</p>
+        <p class="hero-body">HoloLink es un comunicador holográfico portátil que proyecta en tiempo real la imagen volumétrica de una persona para conversar, colaborar y compartir un espacio común a distancia.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#viewer">Explorar objeto 3D</a>
+          <a class="button button-ghost ar-link" rel="ar" href="assets/models/hololink.usdz">
+            <img src="assets/images/ar-icon.svg" alt="" aria-hidden="true" />
+            <span>Ver en AR</span>
+          </a>
+        </div>
+        <p class="microcopy">AR disponible en iPhone y iPad compatibles con Apple Quick Look.</p>
+      </div>
+
+      <div class="hero-visual" aria-label="Visualización conceptual de HoloLink">
+        <img src="assets/images/hololink-hero.png" alt="HoloLink abierto proyectando holográficamente a una persona" />
+        <div class="hero-caption">
+          <span>01 / objeto</span>
+          <span>proyección volumétrica personal</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="premise" aria-labelledby="premise-title">
+      <p class="section-index">02 / premisa</p>
+      <h2 id="premise-title">En 2042, la distancia ya no se mide solo en kilómetros, sino en cuánto de una persona puede atravesar una conexión.</h2>
+      <p>Durante décadas, las videollamadas comprimieron la comunicación humana a un rectángulo. HoloLink aparece cuando la captura espacial, la conectividad de muy baja latencia y el procesamiento de IA alcanzan una escala suficientemente pequeña y eficiente para salir del estudio y entrar en la palma de la mano.</p>
+    </section>
+
+    <section class="object-section" id="objeto">
+      <div class="object-text">
+        <p class="section-index">03 / el objeto</p>
+        <h2>Un dispositivo que se abre para crear un lugar.</h2>
+        <p>Cerrado, HoloLink funciona como un objeto compacto de comunicación personal. Al desplegarse, su tapa actúa como superficie óptica y de calibración, mientras la base captura el entorno inmediato y genera un volumen de proyección estable frente al usuario.</p>
+        <p>No sustituye el encuentro físico. Su propósito es reducir la sensación de separación en situaciones donde viajar resulta lento, costoso o innecesario, desde conversaciones familiares hasta revisiones de diseño, asistencia remota y colaboración internacional.</p>
+      </div>
+      <figure class="reference-figure">
+        <img src="assets/images/hololink-reference.jpg" alt="Vistas frontal, lateral, superior y posterior del diseño de HoloLink" loading="lazy" />
+        <figcaption>Referencia formal para modelado · volumen circular plegable · 110 mm de diámetro.</figcaption>
+      </figure>
+    </section>
+
+    <section class="viewer-section" id="viewer" aria-labelledby="viewer-title">
+      <div class="viewer-heading">
+        <div>
+          <p class="section-index">04 / modelo interactivo</p>
+          <h2 id="viewer-title">Explora HoloLink.</h2>
+        </div>
+        <p>Arrastra para rotar · desplaza o pellizca para acercar.</p>
+      </div>
+      <div class="viewer-shell">
+        <div id="viewer3d" class="viewer3d" role="img" aria-label="Visor 3D interactivo de HoloLink">
+          <div class="viewer-fallback" id="viewerFallback">
+            <img src="assets/images/hololink-reference.jpg" alt="Referencia visual de HoloLink" />
+            <p id="viewerStatus">Preparando visor 3D…</p>
+          </div>
+        </div>
+        <div class="viewer-meta" aria-hidden="true">
+          <span>WebGL · GLB</span><span>rotación libre</span><span>escala automática</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="system-section" id="sistema" aria-labelledby="system-title">
+      <div class="system-intro">
+        <p class="section-index">05 / sistema</p>
+        <h2 id="system-title">Cinco capas hacen posible la ilusión de presencia.</h2>
+      </div>
+      <div class="principles">
+        <article><span>01</span><h3>Captura espacial</h3><p>Un conjunto de cámaras y sensores de profundidad reconstruye rostro, postura y gestos como volumen tridimensional dinámico.</p></article>
+        <article><span>02</span><h3>Reconstrucción por IA</h3><p>El sistema completa zonas ocluidas, estabiliza el movimiento y optimiza la geometría antes de transmitirla.</p></article>
+        <article><span>03</span><h3>Transmisión adaptativa</h3><p>La conexión prioriza mirada, voz y gestualidad para mantener la conversación fluida incluso cuando cambia el ancho de banda.</p></article>
+        <article><span>04</span><h3>Proyección volumétrica</h3><p>Una matriz óptica de campo luminoso genera la percepción de profundidad sin gafas dentro de un volumen de interacción cercano.</p></article>
+        <article><span>05</span><h3>Interacción natural</h3><p>Micrófonos direccionales, seguimiento de mirada y traducción contextual permiten conversar sin aprender una interfaz nueva.</p></article>
+      </div>
+    </section>
+
+    <section class="future-grid" aria-labelledby="tech-title">
+      <div class="future-quote">
+        <p class="section-index">06 / tecnología</p>
+        <blockquote>El salto no es una pantalla mejor. Es hacer portátil una infraestructura que hoy todavía requiere cámaras, cómputo y óptica separados.</blockquote>
+      </div>
+      <div class="tech-list" id="tech-title">
+        <div><span>Óptica</span><strong>Campo luminoso / guía fotónica</strong></div>
+        <div><span>Captura</span><strong>RGB + profundidad + seguimiento ocular</strong></div>
+        <div><span>Procesamiento</span><strong>Reconstrucción neural en tiempo real</strong></div>
+        <div><span>Conectividad</span><strong>Redes de próxima generación y enlace satelital</strong></div>
+        <div><span>Energía</span><strong>Batería de alta densidad y recuperación auxiliar</strong></div>
+        <div><span>Materiales</span><strong>Aleaciones ligeras y polímeros de menor impacto</strong></div>
+      </div>
+    </section>
+
+    <section class="timeline" id="historia" aria-labelledby="history-title">
+      <p class="section-index">07 / historia</p>
+      <h2 id="history-title">Del video plano a la comunicación espacial.</h2>
+      <div class="timeline-track">
+        <div class="timeline-item"><time>2026</time><h3>Presente</h3><p>La videollamada es ubicua, pero la presencia sigue limitada por cámara, encuadre y pantalla.</p></div>
+        <div class="timeline-item"><time>2031</time><h3>Primeras señales</h3><p>La captura volumétrica se vuelve más accesible y la IA reduce el costo computacional de reconstruir personas en 3D.</p></div>
+        <div class="timeline-item"><time>2037</time><h3>Tecnología habilitadora</h3><p>Óptica compacta, redes de latencia mínima y chips especializados permiten miniaturizar el sistema.</p></div>
+        <div class="timeline-item is-final"><time>2042</time><h3>HoloLink</h3><p>La comunicación holográfica sale de salas especializadas y se convierte en un objeto personal portátil.</p></div>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Galería conceptual">
+      <figure class="gallery-large"><img src="assets/images/hololink-hero.png" alt="Presentación conceptual de HoloLink con proyección holográfica" loading="lazy" /></figure>
+      <div class="gallery-note"><span>Escala personal</span><p>110 mm de diámetro. Un objeto de bolsillo que despliega una escena de comunicación frente al usuario.</p></div>
+      <figure class="gallery-small"><img src="assets/images/hololink-reference.jpg" alt="Vistas de referencia de HoloLink" loading="lazy" /></figure>
+    </section>
+
+    <section class="ar-section" id="ar" aria-labelledby="ar-title">
+      <div>
+        <p class="section-index">08 / realidad aumentada</p>
+        <h2 id="ar-title">Colócalo en tu espacio.</h2>
+        <p>En iPhone o iPad compatible, Quick Look abre el modelo USDZ y permite visualizar HoloLink a escala dentro del entorno real.</p>
+      </div>
+      <a class="ar-poster ar-link" rel="ar" href="assets/models/hololink.usdz" aria-label="Abrir HoloLink en realidad aumentada">
+        <img src="assets/images/hololink-reference.jpg" alt="Vista previa de HoloLink para realidad aumentada" loading="lazy" />
+        <span class="ar-badge"><img src="assets/images/ar-icon.svg" alt="" aria-hidden="true" /> Ver en AR</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>HOLOLINK</strong><span>Objeto especulativo · 2042</span></div>
+    <div><span>Diseño industrial especulativo</span><span>Micrositio experimental</span></div>
+  </footer>
+
+  <script type="module" src="assets/js/viewer.js"></script>
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>
