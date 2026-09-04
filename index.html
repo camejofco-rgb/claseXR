@@ -7,6 +7,7 @@
   <meta name="description" content="HoloLink — comunicador holográfico portátil de diseño especulativo para 2042." />
   <title>HoloLink — 2042</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Ir al contenido</a>
@@ -34,12 +35,12 @@
         <p class="hero-body">HoloLink es un comunicador holográfico portátil que proyecta en tiempo real la imagen volumétrica de una persona para conversar, colaborar y compartir un espacio común a distancia.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#viewer">Explorar objeto 3D</a>
-          <a class="button button-ghost ar-link" rel="ar" href="assets/models/hololink.usdz">
+          <button class="button button-ghost ar-trigger" id="heroArButton" type="button">
             <img src="assets/images/ar-icon.svg" alt="" aria-hidden="true" />
-            <span>Ver en AR</span>
-          </a>
+            <span>Ver en RA</span>
+          </button>
         </div>
-        <p class="microcopy">AR disponible en iPhone y iPad compatibles con Apple Quick Look.</p>
+        <p class="microcopy">RA multiplataforma: Android compatible usa GLB; iPhone/iPad usa USDZ mediante Quick Look.</p>
       </div>
 
       <div class="hero-visual" aria-label="Visualización conceptual de HoloLink">
@@ -138,15 +139,46 @@
     </section>
 
     <section class="ar-section" id="ar" aria-labelledby="ar-title">
-      <div>
+      <div class="ar-copy">
         <p class="section-index">08 / realidad aumentada</p>
         <h2 id="ar-title">Colócalo en tu espacio.</h2>
-        <p>En iPhone o iPad compatible, Quick Look abre el modelo USDZ y permite visualizar HoloLink a escala dentro del entorno real.</p>
+        <p>En Android compatible, HoloLink usa el archivo GLB mediante WebXR o Google Scene Viewer. En iPhone y iPad usa el archivo USDZ mediante Apple Quick Look.</p>
+        <button class="button button-primary ar-trigger" id="sectionArButton" type="button">
+          <img src="assets/images/ar-icon.svg" alt="" aria-hidden="true" />
+          <span>Ver HoloLink en RA</span>
+        </button>
+        <p class="ar-status" id="arStatus" role="status">Comprobando compatibilidad de RA…</p>
+        <a class="quicklook-fallback" id="quickLookFallback" rel="ar" href="assets/models/hololink.usdz" aria-label="Abrir HoloLink con Apple Quick Look">
+          <img src="assets/images/hololink-reference.jpg" alt="" />
+        </a>
       </div>
-      <a class="ar-poster ar-link" rel="ar" href="assets/models/hololink.usdz" aria-label="Abrir HoloLink en realidad aumentada">
-        <img src="assets/images/hololink-reference.jpg" alt="Vista previa de HoloLink para realidad aumentada" loading="lazy" />
-        <span class="ar-badge"><img src="assets/images/ar-icon.svg" alt="" aria-hidden="true" /> Ver en AR</span>
-      </a>
+
+      <div class="ar-viewer-shell">
+        <model-viewer
+          id="hololinkAR"
+          class="ar-model-viewer"
+          src="assets/models/hololink.glb"
+          ios-src="assets/models/hololink.usdz"
+          poster="assets/images/hololink-reference.jpg"
+          alt="Modelo 3D de HoloLink listo para realidad aumentada"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          ar-scale="auto"
+          camera-controls
+          touch-action="pan-y"
+          shadow-intensity="1"
+          exposure="1"
+          environment-image="neutral">
+          <button slot="ar-button" class="ar-badge ar-native-button" type="button">
+            <img src="assets/images/ar-icon.svg" alt="" aria-hidden="true" />
+            Abrir RA
+          </button>
+          <div class="ar-load-fallback" slot="poster">
+            <img src="assets/images/hololink-reference.jpg" alt="Vista previa de HoloLink para realidad aumentada" loading="lazy" />
+          </div>
+        </model-viewer>
+        <noscript><p class="ar-noscript">Activa JavaScript para iniciar la realidad aumentada. El resto del sitio continúa disponible.</p></noscript>
+      </div>
     </section>
   </main>
 
